@@ -1,6 +1,6 @@
 NAME = App
 LDFLAGS = # libraries go here
-CFLAGS = -std=c++17 -O0 -Wall -Wno-switch -Wpedantic
+CFLAGS = -Ilib/ -std=c++17 -O0 -Wall -Wpedantic
 CC = cc
 
 LIB_SOURCES = \
