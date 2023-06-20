@@ -4,14 +4,14 @@ CFLAGS = -Ilib/ -std=c++17 -O0 -Wall -Wpedantic
 CC = cc
 
 LIB_SOURCES = \
-	# lib sources go here
+	# lib source files go here
 
-LIB_OBJECTS = $(LIB_SOURCES:%.cpp=build/obj/%.o)
+LIB_OBJECTS = $(LIB_SOURCES:%.c=build/obj/%.o)
 
 MAIN_SOURCES = \
-	# main sources go here
+	# main source files go here
 
-MAIN_OBJECTS = $(MAIN_SOURCES:%.cpp=build/obj/%.o)
+MAIN_OBJECTS = $(MAIN_SOURCES:%.c=build/obj/%.o)
 
 all: $(NAME)
 	build/$(NAME)
